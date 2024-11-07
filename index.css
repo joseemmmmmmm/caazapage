@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#eco {
+    padding-top: 53px;
+}
+
+#turi-cul {
+    padding-top: 54px;
+}
+
+#his-trad {
+    padding-top: 9px;
+}
+
+.btn-eco {
+    margin-top: 25px;
+}
+
+.btn-turi {
+    margin-top: -4px;
+}
+
+.btn-his {
+    margin-top: 26px;
+}   
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(68, 68, 209);
+}
+
+button:hover{
+    background-color: rgb(14, 119, 206);
+}
+
+.mas-caazapa{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 4em;
+    color: rgb(0, 0, 0);    
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+     color: rgb(50, 108, 201) }
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: rgb(50, 108, 201);
+}
+
+/* Ajustes para el header */
+header {
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    color: rgb(68, 68, 209);
+    font-size: 1.6em;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+}
+
+header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header nav a:hover {
+    color: rgb(68, 68, 209);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/manantial-de-agua.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.titulo-container{
+    margin-top: 70px;
+}
+
+#hero h1{
+    color: white;
+
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 90px 12px 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/python.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/python.jpg");
+
+}
+
+.containerr {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 70px 70px 70px;
+}
+
+.containerr .card {
+    position: relative;
+    width: 300px;
+    background: #fff;
+    margin: 30px 15px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.contenido p{
+    text-align: justify;
+}
+
+.contenido h2{
+    font-size: 35px;
+}
+
+.containerr .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr .card .imgBx img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
+    object-fit: cover; 
+}
+
+.container .programa .carta p{
+    padding-top: 10000px;
+}
+
+
+.containerr .card .contenido {
+    position: relative;
+    margin-top: -80px; 
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    font-size: 14px; 
+}
+
+.containerr .card .contenido h2 {
+    margin-top: 15px;
+}
+
+.containerr .card:hover .contenido {
+    max-height: 500px; 
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#enviar-opinion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 80px;
+}
+
+.formulario {
+    background-image: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7)
+        ),
+        url(media/manantial-de-agua.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 800px;
+    height: 750px;
+    border-radius: 25px;
+    
+}
+
+.formulario h2{
+    color: #f4f6f9;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+label{
+    font-size: 17px;
+    color: #959AAB;
+    margin-bottom: 10px;
+}
+
+input , textarea {
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #f4f6f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+:focus {
+    outline: 1px solid #1e92e9;
+}
+
+.boton-enviar{
+    background-color: #1e92e9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.boton-enviar:hover{
+    background-color: #219bf9;
+}
+
+@media(max-width:991px){
+    body {
+        padding: 30px;
+    }
+    .formulario{
+        width: 100%;
+    }
+    .enviar-opinion{
+        width: 100%;
+    }
+}
+
+/* Estilos básicos del footer */
+footer {
+    background-color: rgb(230, 230, 230);
+    padding: 20px 0;
+    color: rgb(100, 100, 100);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: rgb(80, 80, 80);
+}
+
+/* Espaciado adicional y estilo del texto */
+.footer-info {
+    max-width: 600px;
+}
+
+/* Opcional: estilo de un área de redes sociales */
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: rgb(68, 68, 209); /* Cambia el color al pasar el mouse */
+}
+
+
+.carta p {
+    margin-top: 10px; 
+}
+
+.carta button {
+   margin-bottom: 1px;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+        z-index: 100000;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: url(media/yo\ amo\ caazapa\ original.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px; 
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    .container h2{
+        padding-bottom: 50px;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/economía\ de\ caazapá.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/turismo.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/ykuabolaños.jpg");
+
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #caracteristicas{
+        text-align: center;
+        justify-content: center;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+.descubre-caazapa{
+    font-size: 25px;
+    text-align: justify;
+}
+
+
+
+
+
+

@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a { text-decoration: none; }
+h1 { font-size: 3.5em; text-align: center; color: rgb(68, 68, 209); margin-top: 60px; }
+h2 { font-size: 2.7em; color: rgb(68, 68, 209); text-align: center; }
+p { font-size: 1.25em; max-width: 800px; margin: 20px auto; text-align: center; color: rgb(50, 50, 50); }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container p{
+    text-align: justify;
+}
+
+/* Contenedor del ícono musical */
+.music-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Ícono musical sin fondo, borde ni sombra */
+.music-icon {
+    font-size: 3rem; /* Tamaño más grande */
+    background-color: transparent !important; /* Fondo transparente */
+    border: none !important; /* Sin borde */
+    box-shadow: none !important; /* Sin sombra */
+    cursor: pointer;
+    color: rgb(0, 0, 0); /* Color del ícono */
+    animation: spin 4s linear infinite; /* Animación de rotación */
+    padding: 0; /* Sin padding para evitar espacio adicional */
+    outline: none; /* Sin contorno */
+    margin-top: -4  px;
+    margin-right: 10px;
+}
+
+/* Efecto hover */
+.music-icon:hover {
+    color: rgb(68, 68, 209); /* Cambia de color en hover */
+}
+
+/* Animación de rotación */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Menú desplegable */
+.music-menu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    background-color: #333; /* Fondo oscuro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.music-menu button {
+    display: block;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white; /* Texto en blanco */
+    width: 100%;
+    text-align: left;
+}
+
+.music-menu button:hover {
+    background-color: #444; /* Fondo más oscuro en hover */
+}
+
+
+
+/* Ajustes para el header */
+header {
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    color: rgb(68, 68, 209);
+    font-size: 1.6em;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+}
+
+header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header nav a:hover {
+    color: rgb(68, 68, 209);
+}
+/* Estilos de la sección de título principal */
+.titulo-principal {
+    padding: 60px 20px 20px;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+
+/* Estilos de la sección de distritos */
+.distritos {
+    padding: 60px 20px; /* Espaciado superior e inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente el contenido */
+    background-color: rgb(245, 245, 245);
+    color: rgb(50, 50, 50);
+}
+
+
+.distritos h2 {
+    color: rgb(68, 68, 209);
+    margin-bottom: 20px;
+}
+
+/* Estilos de la tabla */
+/* Estilos de la sección de distritos */
+.distritos {
+    padding: 5px 20px 100px 20px; /* Espaciado superior e inferior */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    background-color: rgb(245, 245, 245);
+    color: rgb(50, 50, 50);
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: auto; /* Centrar la tabla */
+    border-collapse: collapse;
+    background-color: rgb(245, 245, 245); /* Fondo claro para contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #444; /* Borde gris oscuro para visibilidad */
+}
+
+
+table th, table td {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid #444; /* Bordes visibles de las celdas */
+    text-align: center;
+}
+
+table thead {
+    background-color: rgb(68, 68, 209);
+    color: #fff; /* Texto blanco para mejor contraste en el encabezado */
+    text-transform: uppercase;
+}
+
+table tbody tr:hover {
+    background-color: rgb(230, 230, 230); /* Color de fondo claro al pasar el cursor */
+}
+
+table td {
+    color: rgb(50, 50, 50); /* Texto oscuro para mejor contraste */
+}
+
+/* Estilos básicos del footer */
+footer {
+    background-color: rgb(230, 230, 230);
+    padding: 20px 0;
+    color: rgb(100, 100, 100);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: rgb(80, 80, 80);
+}
+
+/* Espaciado adicional y estilo del texto */
+.footer-info {
+    max-width: 600px;
+}
+
+/* Opcional: estilo de un área de redes sociales */
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: rgb(68, 68, 209); /* Cambia el color al pasar el mouse */
+}

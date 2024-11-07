@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+/* Ajustes para el header */
+header {
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    padding: 25px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    color: rgb(68, 68, 209);
+    font-size: 1.6em;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+}
+
+header nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header nav a:hover {
+    color: rgb(68, 68, 209);
+}
+
+/* Estilos específicos para el mapa interactivo */
+#mapa-interactivo {
+    text-align: center;
+    padding: 115px 20px;
+    flex: 1; /* Para que ocupe el espacio disponible */
+}
+
+#mapa-interactivo h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(68, 68, 209);
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos básicos del footer */
+footer {
+    background-color: rgb(230, 230, 230);
+    padding: 20px 0;
+    color: rgb(100, 100, 100);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: rgb(80, 80, 80);
+}
+
+/* Espaciado adicional y estilo del texto */
+.footer-info {
+    max-width: 600px;
+}
+
+/* Opcional: estilo de un área de redes sociales */
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: rgb(68, 68, 209); /* Cambia el color al pasar el mouse */
+}
+
+
+/* Sección de lugares locales */
+#lugares-locales {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#lugares-locales h2 {
+    font-size: 2em;
+    color: rgb(68, 68, 209);
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Efecto de zoom */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Zoom al pasar el mouse */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    color: rgb(80, 80, 80);
+    font-size: 0.9em;
+}
+
+/* Estilos para el contenedor del video */
+.video-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-container h3 {
+    font-size: 1.8em;
+    color: rgb(68, 68, 209);
+    margin-bottom: 10px;
+}
+
+.video-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 560px;
+    height: 315px; /* Ajuste de altura para mejor proporción */
+}

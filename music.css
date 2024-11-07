@@ -1,0 +1,28 @@
+  
+  /* Estilos para el corchete flotante */
+.corchete-flotante {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 1000;
+    animation: rotacion 3s linear infinite
+  }
+  
+  /* Efecto de rotación continuo */
+  @keyframes rotacion {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Estilo para el ícono de música */
+  .material-symbols-outlined {
+    font-size: 50px !important; /* Cambia el tamaño aquí */
+    color: rgb(68, 68, 209); /* Cambia el color del ícono */
+  }
+  
